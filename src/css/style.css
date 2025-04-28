@@ -61,6 +61,12 @@ h1 {
 
 }
 
+.panel__title{
+    margin-bottom: 5rem;
+    font-size: 2rem;
+     font-weight: 900;
+}
+
 .panel--cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -68,26 +74,33 @@ h1 {
 }
 
 @media screen and (min-width: 768px) {
-   .panel--cards{
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-   }
-    
+    .panel--cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .panel__title{
+        font-size: 2.2rem;
+    }
+
 }
 
 @media screen and (min-width: 1024px) {
-    .panel--cards{
+    .panel--cards {
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
     }
-    
+
+    .panel__title{
+        font-size: 2.5rem;
+    }
 }
 
-.panel--card{
+.panel--card {
     margin-top: 2rem;
     margin-left: 4rem;
     margin-bottom: 5rem;
 }
+
 .card__intro {
     display: flex;
     width: 100%;
@@ -104,7 +117,7 @@ h1 {
 .intro__title {
     color: var(--heading-secondary-color);
     /* margin-right: -20rem; */
-margin-right: 1rem;
+    margin-right: 1rem;
 }
 
 .intro__date {
@@ -131,14 +144,14 @@ margin-right: 1rem;
     display: flex;
     /* align-items: center; */
     justify-content: space-between;
-    
+
 }
 
-.avatar__name{
+.avatar__name {
     margin-right: 1rem;
 }
 
-.avatar__req{
+.avatar__req {
     font-size: var(--font-size-base);
     color: var(--text-box-color);
     background-color: var(--background-box-color);
@@ -148,6 +161,7 @@ margin-right: 1rem;
     cursor: pointer;
     transition: var(--transition-base);
 }
+
 .avatar__req:hover {
     background-color: var(--background-box-secondary-color);
     color: var(--number-box-color);
@@ -155,7 +169,7 @@ margin-right: 1rem;
 }
 
 
-.avatar__status{
+.avatar__status {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -163,7 +177,7 @@ margin-right: 1rem;
 }
 
 
-.intro__wrapper{
+.intro__wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -178,4 +192,3 @@ margin-right: 1rem;
         font-size: var(--font-size-lg);
     }
 }
-
